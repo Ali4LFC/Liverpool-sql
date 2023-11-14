@@ -1,14 +1,18 @@
-CREATE DATABASE FBPlayers;
-USE FBPlayers;
-CREATE TABLE players (
-    id INT PRIMARY KEY NOT NULL,
-    PlayerName VARCHAR(50) NOT NULL,
-    emailPlayerNum INT NOT NULL,
-    age INT
+CREATE TABLE IF NOT EXISTS LiverpoolPlayers (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    playerName VARCHAR(50) NOT NULL,
+    playerNumber INT NOT NULL,
+    position VARCHAR(50),
+    nationality VARCHAR(50),
+    age INT,
+    height DECIMAL(4, 2),
+    weight DECIMAL(5, 2)
 );
-CREATE INDEX idx_number ON players(PlayerNum);
-INSERT INTO players (PlayerName, number, age) VALUES
-('Virgil', '4', 32),
-('Salah', '11', 31),
-('Darwin', '9', 24),
-('Alisson', '1',31);
+
+INSERT INTO LiverpoolPlayers (playerName, playerNumber, position, nationality, age, height, weight) VALUES
+('Virgil van Dijk', 4, 'Defender', 'Dutch', 30, 1.93, 92),
+('Mohamed Salah', 11, 'Forward', 'Egyptian', 29, 1.75, 71),
+('Sadio Mané', 10, 'Forward', 'Senegalese', 29, 1.75, 69),
+('Alisson Becker', 1, 'Goalkeeper', 'Brazilian', 29, 1.91, 91);
+
+SELECT * FROM LiverpoolPlayers;

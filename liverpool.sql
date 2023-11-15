@@ -10,9 +10,9 @@ CREATE TABLE IF NOT EXISTS LiverpoolPlayers (
 );
 
 INSERT INTO LiverpoolPlayers (playerName, playerNumber, position, nationality, age, height, weight) VALUES
-('Virgil van Dijk', 4, 'Defender', 'Dutch', 30, 1.93, 92),
-('Mohamed Salah', 11, 'Forward', 'Egyptian', 29, 1.75, 71),
-('Sadio Mané', 10, 'Forward', 'Senegalese', 29, 1.75, 69),
-('Alisson Becker', 1, 'Goalkeeper', 'Brazilian', 29, 1.91, 91);
+('Virgil van Dijk', 4, 'Defender', 'Dutch', 32, 1.93, 92),
+('Mohamed Salah', 11, 'Forward', 'Egyptian', 31, 1.75, 71),
+('Darwin Nunez', 9, 'Forward', 'Uruguayan', 24, 1.75, 69),
+('Alisson Becker', 1, 'Goalkeeper', 'Brazilian', 31, 1.91, 91);
 
 SELECT * FROM LiverpoolPlayers;
